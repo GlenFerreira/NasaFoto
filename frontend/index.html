@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA APOD - Descubra o Universo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <main class="container">
+        <header>
+            <h1><i class="fa-solid fa-rocket"></i> Explorador do Universo</h1>
+            <p>Descubra como o universo estava no dia do seu aniversário (ou em qualquer outra data) pela lente da NASA.</p>
+        </header>
+
+        <section class="search-section">
+            <div class="input-wrapper">
+                <input type="date" id="dateInput" max="" aria-label="Selecione a data">
+                <button id="searchBtn">
+                    Descobrir <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="error-msg" id="errorMsg"></div>
+        </section>
+
+        <div class="loader" id="loader">
+            <div class="spinner"></div>
+            <p>Viajando pelo espaço-tempo...</p>
+        </div>
+
+        <section class="result-section hidden" id="resultSection">
+            <div class="media-container" id="mediaContainer">
+                <!-- Image or iframe will be injected here -->
+            </div>
+            <div class="content-container">
+                <h2 id="apodTitle"></h2>
+                <span class="date-badge" id="apodDate"></span>
+                <p id="apodExplanation"></p>
+                <div class="credits">
+                    <span id="apodCopyright"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
