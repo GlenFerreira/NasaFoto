@@ -1,4 +1,4 @@
-# NASA APOD Viewer 🚀 2IAA
+# NASA APOD Viewer 🚀 2IAA <3
 
 Um aplicativo web moderno utilizando a API "Astronomy Picture of the Day" (APOD) da NASA. Informe uma data e descubra o que havia no espaço sideral naquele dia!
 
